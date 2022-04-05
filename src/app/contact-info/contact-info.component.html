@@ -1,0 +1,10 @@
+<div class="col md-12">
+  <div class="row" *ngFor="let item; in: data; index as key">
+    <div class="col md-3">
+      {{ key }}
+    </div>
+    <div class="col md-3">
+      <input [type]="item.type" [(ngModel)]="item.value" />
+    </div>
+  </div>
+</div>
