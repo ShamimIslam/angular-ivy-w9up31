@@ -1,10 +1,10 @@
 <div class="col md-12">
-  <div class="row" *ngFor="let item; in: data; index as key">
+  <div class="row" *ngFor="let item of fields">
     <div class="col md-3">
-      {{ key }}
+      {{ item }}
     </div>
     <div class="col md-3">
-      <input [type]="item.type" [(ngModel)]="item.value" />
+      <input [type]="data[item].type" [(ngModel)]="data[item].value" />
     </div>
   </div>
 </div>
