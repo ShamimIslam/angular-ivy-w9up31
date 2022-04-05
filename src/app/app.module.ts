@@ -5,6 +5,7 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
